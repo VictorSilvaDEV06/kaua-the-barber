@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#050505">
+    
+    <title>Portfólio de Cortes KTB</title>
+
+    <meta name="description"
+        content="Confira o portfólio de cortes da Kauã The Barber. Low Fade, Mid Fade, Freestyle, Social, Degradê Premium e muito mais.">
+
+    <meta name="keywords"
+        content="barbearia cajamar, cortes masculinos, low fade, freestyle, degradê, barbeiro cajamar">
+
+    <meta name="author" content="Kauã The Barber">
+
+    <meta name="robots" content="index, follow">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="icon" href="../favicon.ico">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        body {
+            background: #050505;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .portfolio-hero {
+
+            min-height: 60vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 140px 24px 80px;
+        }
+
+        .portfolio-hero h1 {
+
+            font-size: clamp(3rem, 7vw, 5.5rem);
+
+            margin-bottom: 20px;
+        }
+
+        .portfolio-hero p {
+
+            color: #b5b5b5;
+
+            max-width: 700px;
+
+            margin: 0 auto;
+
+            font-size: 1.1rem;
+        }
+
+        .portfolio-section {
+
+            padding: 80px 24px;
+
+            max-width: 1400px;
+
+            margin: 0 auto;
+        }
+
+        .portfolio-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+            gap: 24px;
+        }
+
+        .portfolio-card {
+
+            overflow: hidden;
+
+            border-radius: 20px;
+
+            border: 1px solid #1d1d1d;
+
+            background: #111111;
+
+            cursor: pointer;
+
+            transition: .3s ease;
+        }
+
+        .portfolio-card:hover {
+
+            transform: translateY(-8px);
+        }
+
+        .portfolio-card img {
+
+            width: 100%;
+
+            height: 420px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+        .cta-final {
+
+            padding: 100px 24px;
+
+            text-align: center;
+        }
+
+        .cta-final h2 {
+
+            font-size: 3rem;
+
+            margin-bottom: 20px;
+        }
+
+        .cta-final p {
+
+            color: #b5b5b5;
+
+            margin-bottom: 35px;
+        }
+
+        .cta-button {
+
+            display: inline-block;
+
+            background: #ffffff;
+
+            color: #000000;
+
+            text-decoration: none;
+
+            padding: 18px 34px;
+
+            border-radius: 12px;
+
+            font-weight: 700;
+
+            transition: .3s ease;
+        }
+
+        .cta-button:hover {
+
+            background: #d4af37;
+        }
+
+        .lightbox {
+
+            display: none;
+
+            position: fixed;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0, 0, 0, 0.95);
+
+            justify-content: center;
+            align-items: center;
+
+            z-index: 99999;
+        }
+
+        .lightbox img {
+
+            max-width: 90%;
+            max-height: 90%;
+
+            border-radius: 16px;
+        }
+
+        .close-lightbox {
+
+            position: absolute;
+
+            top: 30px;
+            right: 40px;
+
+            font-size: 3rem;
+
+            color: #ffffff;
+
+            cursor: pointer;
+        }
+
+        .voltar-site a {
+
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 8px;
+
+            transition: 0.3s ease;
+        }
+
+        .voltar-site a:visited {
+
+            color: #ffffff;
+        }
+
+        .voltar-site a:hover {
+
+            color: #d4af37;
+        }
+
+        .voltar-site a:active {
+
+            color: #d4af37;
+        }
+
+
+        @media(max-width:768px) {
+
+            .portfolio-card img {
+
+                height: 300px;
+            }
+
+            .cta-final h2 {
+
+                font-size: 2.2rem;
+            }
+
+            .close-lightbox {
+
+                top: 15px;
+                right: 20px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <class="header">
+
+        <nav class="navbar">
+
+            <div class="nav-container">
+
+                <div class="nav-logo">
+
+                    <h1>Kauã The Barber</h1>
+
+                </div>
+
+                <div class="voltar-site">
+
+                    <a href="../index.html">
+
+                        <i class="fas fa-arrow-left"></i>
+
+                        Voltar ao Site
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+
+        </header>
+
+        <section class="portfolio-hero">
+
+            <div>
+
+                <h1>Portfólio de Serviços</h1>
+
+                <p>
+                    Conheça alguns dos trabalhos realizados pela equipe Kauã The Barber.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="portfolio-section">
+
+            <div class="portfolio-grid">
+
+                <div class="portfolio-card"><img src="../biografia/img/img_1.jpeg" alt="Corte 1"></div>
+                <div class="portfolio-card"><img src="../imagens/img_7.jpeg" alt="Corte 2"></div>
+                <div class="portfolio-card"><img src="../biografia/img/img_3.jpeg" alt="Corte 3"></div>
+                <div class="portfolio-card"><img src="../imagens/img_9.jpeg" alt="Corte 4"></div>
+                <div class="portfolio-card"><img src="../biografia/img/img_4.jpeg" alt="Corte 5"></div>
+                <div class="portfolio-card"><img src="../biografia/img/img_2.jpeg" alt="Corte 6"></div>
+                <div class="portfolio-card"><img src="../imagens/img_6.jpeg" alt="Corte 7"></div>
+                <div class="portfolio-card"><img src="../imagens/img_10.jpeg" alt="Corte 8"></div>
+                <div class="portfolio-card"><img src="../imagens/img_11.jpeg" alt="Corte 9"></div>
+                <div class="portfolio-card"><img src="../imagens/img_12.jpeg" alt="Corte 10"></div>
+                <div class="portfolio-card"><img src="../imagens/img_13.jpeg" alt="Corte 11"></div>
+                <div class="portfolio-card"><img src="../imagens/img_14.jpeg" alt="Corte 12"></div>
+
+            </div>
+
+        </section>
+
+        <section class="cta-final">
+
+            <h2>Gostou dos resultados?</h2>
+
+            <p>
+                Agende seu horário e viva a experiência completa na Kauã The Barber.
+            </p>
+
+            <a href="https://sites.appbarber.com.br/kauathebarber" target="_blank" class="cta-button">
+
+                AGENDAR AGORA
+
+            </a>
+
+        </section>
+
+        <div class="lightbox" id="lightbox">
+
+            <span class="close-lightbox">&times;</span>
+
+            <img id="lightbox-img" src="" alt="Imagem ampliada">
+
+        </div>
+
+        <script>
+
+            const lightbox = document.getElementById("lightbox");
+            const lightboxImg = document.getElementById("lightbox-img");
+
+            document.querySelectorAll(".portfolio-card img").forEach(img => {
+
+                img.addEventListener("click", () => {
+
+                    lightbox.style.display = "flex";
+                    lightboxImg.src = img.src;
+
+                });
+
+            });
+
+            document.querySelector(".close-lightbox").addEventListener("click", () => {
+
+                lightbox.style.display = "none";
+
+            });
+
+            lightbox.addEventListener("click", (e) => {
+
+                if (e.target === lightbox) {
+
+                    lightbox.style.display = "none";
+
+                }
+
+            });
+
+        </script>
+
+</body>
+
+</html>

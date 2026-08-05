@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#050505">
+
+    <title>Em Andamento | Kauã The Barber</title>
+
+    <meta name="description"
+        content="Acompanhe a evolução do novo espaço da Kauã The Barber e veja cada etapa desse novo capítulo.">
+
+    <meta name="robots" content="index, follow">
+
+    <meta name="author" content="Kauã The Barber">
+
+    <link rel="icon" href="./favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <style>
+        /* =========================
+        PÁGINA EM ANDAMENTO
+        ========================= */
+
+        body {
+            background: #050505;
+            color: #ffffff;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* =========================
+        VOLTAR
+        ========================= */
+
+        .voltar-site a {
+            color: #ffffff;
+
+            text-decoration: none;
+
+            font-weight: 600;
+
+            display: flex;
+            align-items: center;
+
+            gap: 8px;
+
+            transition: .3s ease;
+        }
+
+        .voltar-site a:hover {
+            color: #d4af37;
+        }
+
+        /* =========================
+        HERO
+        ========================= */
+
+        .andamento-hero {
+
+            min-height: 75vh;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            text-align: center;
+
+            padding: 150px 24px 90px;
+
+            background:
+                radial-gradient(circle at center,
+                    rgba(212, 175, 55, 0.06),
+                    transparent 45%),
+                #050505;
+        }
+
+        .andamento-hero-content {
+
+            max-width: 950px;
+
+            margin: 0 auto;
+        }
+
+        .andamento-label {
+
+            display: inline-block;
+
+            color: #d4af37;
+
+            font-size: 0.85rem;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 25px;
+        }
+
+        .andamento-hero h1 {
+
+            font-size: clamp(3rem, 7vw, 6rem);
+
+            line-height: 1;
+
+            margin-bottom: 30px;
+
+            text-transform: uppercase;
+        }
+
+        .andamento-hero p {
+
+            max-width: 750px;
+
+            margin: 0 auto;
+
+            color: #b5b5b5;
+
+            font-size: 1.1rem;
+
+            line-height: 1.8;
+        }
+
+        /* =========================
+        INTRODUÇÃO
+        ========================= */
+
+        .andamento-intro {
+
+            padding: 100px 24px;
+
+            background: #0a0a0a;
+        }
+
+        .container-andamento {
+
+            max-width: 1200px;
+
+            margin: 0 auto;
+        }
+
+        .intro-content {
+
+            max-width: 850px;
+
+            margin: 0 auto;
+
+            text-align: center;
+        }
+
+        .intro-content h2 {
+
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+
+            margin-bottom: 25px;
+        }
+
+        .intro-content p {
+
+            color: #b5b5b5;
+
+            line-height: 1.9;
+
+            font-size: 1.05rem;
+        }
+
+        /* =========================
+        ETAPAS
+        ========================= */
+
+        .etapas-section {
+
+            padding: 110px 24px;
+
+            background: #050505;
+        }
+
+        .section-heading {
+
+            text-align: center;
+
+            margin-bottom: 65px;
+        }
+
+        .section-heading span {
+
+            color: #d4af37;
+
+            font-size: 0.85rem;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            text-transform: uppercase;
+        }
+
+        .section-heading h2 {
+
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+
+            margin-top: 12px;
+        }
+
+        .section-heading p {
+
+            max-width: 700px;
+
+            margin: 15px auto 0;
+
+            color: #b5b5b5;
+
+            line-height: 1.8;
+        }
+
+        .etapas-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(auto-fit,
+                    minmax(210px, 1fr));
+
+            gap: 20px;
+        }
+
+        .etapa-card {
+
+            background: #101010;
+
+            border: 1px solid #1d1d1d;
+
+            border-radius: 20px;
+
+            padding: 35px 28px;
+
+            transition: .3s ease;
+        }
+
+        .etapa-card:hover {
+
+            transform: translateY(-7px);
+
+            border-color: #3a3218;
+        }
+
+        .etapa-numero {
+
+            color: #d4af37;
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-size: 0.9rem;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+        }
+
+        .etapa-card i {
+
+            display: block;
+
+            color: #ffffff;
+
+            font-size: 1.8rem;
+
+            margin: 25px 0;
+        }
+
+        .etapa-card h3 {
+
+            font-size: 1.25rem;
+
+            margin-bottom: 12px;
+        }
+
+        .etapa-card p {
+
+            color: #8f8f8f;
+
+            font-size: 0.9rem;
+
+            line-height: 1.7;
+        }
+
+        /* =========================
+GALERIA
+========================= */
+
+        .galeria-section {
+
+            padding: 110px 24px;
+
+            background: #0a0a0a;
+        }
+
+        .galeria-grid {
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .galeria-item {
+
+            position: relative;
+
+            aspect-ratio: 9 / 16;
+
+            overflow: hidden;
+
+            background: #111111;
+
+            border: 1px solid #1d1d1d;
+
+            border-radius: 20px;
+        }
+
+        /* FOTOS */
+
+        .galeria-item img {
+
+            width: 100%;
+
+            height: 100%;
+
+            position: absolute;
+
+            inset: 0;
+
+            object-fit: cover;
+
+            display: block;
+
+            transition: transform .5s ease;
+        }
+
+        /* VÍDEOS */
+
+        .galeria-item video {
+
+            width: 100%;
+
+            height: 100%;
+
+            position: absolute;
+
+            inset: 0;
+
+            object-fit: contain;
+
+            background: #000;
+
+            display: block;
+
+            transition: transform .5s ease;
+        }
+
+        .galeria-item:hover img,
+        .galeria-item:hover video {
+
+            transform: scale(1.04);
+        }
+
+        /* PLACEHOLDER TEMPORÁRIO */
+
+        .galeria-placeholder {
+
+            width: 100%;
+
+            height: 100%;
+
+            min-height: 350px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 15px;
+
+            color: #666666;
+
+            text-align: center;
+
+            padding: 30px;
+        }
+
+        .galeria-placeholder i {
+
+            font-size: 2rem;
+
+            color: #d4af37;
+        }
+
+        .galeria-placeholder span {
+
+            font-size: 0.9rem;
+        }
+
+        /* =========================
+        VÍDEO
+        ========================= */
+
+        .video-section {
+
+            padding: 110px 24px;
+
+            background: #050505;
+        }
+
+        .video-placeholder {
+
+            max-width: 1000px;
+
+            min-height: 500px;
+
+            margin: 0 auto;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+
+            text-align: center;
+
+            gap: 20px;
+
+            background: #0d0d0d;
+
+            border: 1px solid #1d1d1d;
+
+            border-radius: 24px;
+
+            padding: 40px;
+        }
+
+        .video-placeholder i {
+
+            font-size: 4rem;
+
+            color: #d4af37;
+        }
+
+        .video-placeholder h3 {
+
+            font-size: 1.8rem;
+        }
+
+        .video-placeholder p {
+
+            max-width: 600px;
+
+            color: #8f8f8f;
+
+            line-height: 1.8;
+        }
+
+        /* =========================
+        CONTINUA...
+        ========================= */
+
+        .continua-section {
+
+            padding: 130px 24px;
+
+            text-align: center;
+
+            background: #0a0a0a;
+        }
+
+        .continua-section i {
+
+            color: #d4af37;
+
+            font-size: 2rem;
+
+            margin-bottom: 25px;
+        }
+
+        .continua-section h2 {
+
+            font-size: clamp(2.3rem, 5vw, 4rem);
+
+            margin-bottom: 20px;
+        }
+
+        .continua-section p {
+
+            max-width: 700px;
+
+            margin: 0 auto;
+
+            color: #b5b5b5;
+
+            line-height: 1.8;
+        }
+
+        /* =========================
+        MOBILE
+        ========================= */
+
+        @media(max-width: 768px) {
+
+            .nav-logo h1 {
+
+                font-size: 1.4rem;
+            }
+
+            .voltar-site a {
+
+                font-size: 0.85rem;
+            }
+
+            .andamento-hero {
+
+                min-height: 70vh;
+
+                padding:
+                    120px 20px 70px;
+            }
+
+            .andamento-hero h1 {
+
+                font-size: 3rem;
+            }
+
+            .andamento-intro,
+            .etapas-section,
+            .galeria-section,
+            .video-section {
+
+                padding:
+                    75px 18px;
+            }
+
+            .galeria-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .galeria-item,
+            .galeria-placeholder {
+
+                min-height: 320px;
+            }
+
+            .video-placeholder {
+
+                min-height: 350px;
+            }
+
+            .continua-section {
+
+                padding:
+                    90px 20px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- =========================
+    HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <nav class="navbar">
+
+            <div class="nav-container">
+
+                <div class="nav-logo">
+
+                    <h1>Kauã The Barber</h1>
+
+                </div>
+
+                <div class="voltar-site">
+
+                    <a href="./index.html">
+
+                        <i class="fas fa-arrow-left"></i>
+
+                        Voltar ao Site
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- =========================
+    HERO
+    ========================== -->
+
+    <section class="andamento-hero">
+
+        <div class="andamento-hero-content">
+
+            <span class="andamento-label">
+                Em Andamento
+            </span>
+
+            <h1>
+                Um novo capítulo<br>
+                está sendo construído.
+            </h1>
+
+            <p>
+                A Kauã The Barber está crescendo.
+                Acompanhe de perto cada etapa da construção
+                de um novo espaço pensado para levar nossa
+                experiência ainda mais longe.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+    INTRODUÇÃO
+    ========================== -->
+
+    <section class="andamento-intro">
+
+        <div class="container-andamento">
+
+            <div class="intro-content">
+
+                <h2>
+                    O próximo passo da nossa história.
+                </h2>
+
+                <p>
+                    Cada detalhe está sendo pensado para criar
+                    um ambiente que represente a identidade da
+                    Kauã The Barber. Um novo espaço, uma nova
+                    experiência e a mesma dedicação em entregar
+                    excelência em cada detalhe.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <section class="galeria-section">
+
+        <div class="container-andamento">
+
+            <div class="section-heading">
+
+                <span>
+                    Por dentro da transformação
+                </span>
+
+                <h2>
+                    Diário da Obra
+                </h2>
+
+                <p>
+                    Fotos e registros do desenvolvimento
+                    do novo espaço.
+                </p>
+
+            </div>
+
+            <div class="galeria-grid">
+
+                <div class="galeria-item">
+                    <img src="./imagens/img_studio_2.jpeg" alt="Projeto do novo espaço Kauã The Barber">
+                </div>
+
+                <div class="galeria-item">
+                    <img src="./imagens/img_studio_5.jpeg" alt="Início da obra do novo espaço Kauã The Barber">
+                </div>
+
+                <div class="galeria-item">
+                    <img src="./imagens/img_studio_4.jpeg" alt="Evolução da obra do novo espaço Kauã The Barber">
+                </div>
+
+                <div class="galeria-item">
+                    <img src="./imagens/img_studio_6.jpeg" alt="Estrutura do novo espaço Kauã The Barber">
+                </div>
+
+                <div class="galeria-item">
+
+                    <video controls preload="metadata">
+
+                        <source src="./imagens/video_studio_1.mp4" type="video/mp4">
+
+                        Seu navegador não suporta reprodução de vídeo.
+
+                    </video>
+
+                </div>
+
+                <div class="galeria-item">
+
+                    <video controls muted preload="metadata">
+
+                        <source src="./imagens/video_studio_2.mp4" type="video/mp4">
+
+                        Seu navegador não suporta reprodução de vídeo.
+
+                    </video>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================
+    FINAL
+    ========================== -->
+
+    <section class="continua-section">
+
+        <i class="fas fa-hourglass-half"></i>
+
+        <h2>
+            Estamos só começando.
+        </h2>
+
+        <p>
+            Continue acompanhando a Kauã The Barber.
+            Conforme o novo espaço evoluir, novas fotos,
+            vídeos e novidades serão adicionados por aqui.
+        </p>
+
+    </section>
+
+</body>
+
+</html>
