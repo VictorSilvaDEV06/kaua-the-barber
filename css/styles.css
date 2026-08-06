@@ -92,7 +92,7 @@ HEADER
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 42px;
+    gap: 30px;
     margin-right: 160px;
     list-style: none;
 }
@@ -151,11 +151,13 @@ HERO
     flex: 1;
 
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
 
-    margin-top: -200px;
+    justify-content: flex-start;
+    align-items: center;
 
+    margin-top: -25px;
+    
 }
 
 .hero-video video {
@@ -170,6 +172,36 @@ HERO
     box-shadow: 0 25px 60px rgba(0, 0, 0, .45);
 
     object-fit: cover;
+}
+
+.hero-video-btn {
+
+    display: inline-block;
+
+    margin-top: 70px;
+
+    padding: 18px 60px;
+
+    background: #ffffff;
+
+    color: #000;
+
+    text-decoration: none;
+
+    font-weight: 700;
+
+    border-radius: 14px;
+
+    letter-spacing: 1px;
+
+    transition: .3s ease;
+}
+
+.hero-video-btn:hover {
+
+    background: #d4af37;
+
+    transform: translateY(-3px);
 }
 
 .hero-title {
@@ -393,64 +425,65 @@ FEATURES
 
 .features {
     background: #0a0a0a;
-
     padding: 80px 0;
 }
 
 .features-grid {
     display: grid;
-
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-
     gap: 32px;
 }
 
 .feature-card {
     background: #111111;
-
     border: 1px solid #1f1f1f;
-
     border-radius: 20px;
-
     transition: 0.3s ease;
 }
 
 .feature-card:hover {
     transform: translateY(-8px);
-
     border-color: #2f2f2f;
 }
 
 .feature-link {
     display: block;
-
     padding: 42px 32px;
-
     text-decoration: none;
-
     text-align: center;
 }
 
 .feature-link i {
     font-size: 2rem;
-
     color: #ffffff;
-
     margin-bottom: 22px;
 }
 
 .feature-link h3 {
     color: #ffffff;
-
     font-size: 1.5rem;
-
     margin-bottom: 14px;
 }
 
 .feature-link p {
     color: #b5b5b5;
-
     line-height: 1.7;
+}
+
+/* CTA dos cards */
+
+.feature-cta {
+    display: block;
+    margin-top: 24px;
+    color: #d4af37;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    transition: 0.3s ease;
+}
+
+.feature-link:hover .feature-cta {
+    transform: translateX(6px);
 }
 
 /* =========================
@@ -564,7 +597,7 @@ MÉTODO KTB
 
 .newsletter {
     padding: 100px 0;
-    background: #050505;
+    background: #080808;
     border-top: 1px solid #151515;
 }
 
@@ -670,30 +703,47 @@ DEPOIMENTOS
 ========================= */
 
 .depoimentos {
-    padding: 100px 0;
-    background: #0a0a0a;
+
+    padding: 70px 0;
+
+    background: #050505;
+
 }
 
 .depoimentos .container {
+
     position: relative;
-    min-height: 250px;
+
+    min-height: 360px;
+
+    margin-top: -20px;
+
 }
 
 .titulo-depoimentos {
+
     text-align: center;
+
     font-size: 3rem;
-    margin-bottom: 50px;
+
+    margin-bottom: 40px;
+
 }
 
 .depoimento-card {
+
     opacity: 0;
+
     visibility: hidden;
 
     position: absolute;
+
     width: 100%;
 
     max-width: 900px;
+
     left: 50%;
+
     transform: translateX(-50%) translateY(15px);
 
     background: #111111;
@@ -709,25 +759,37 @@ DEPOIMENTOS
     transition:
         opacity 1s ease,
         transform 1s ease;
+
 }
 
 .depoimento-card.active {
+
     opacity: 1;
+
     visibility: visible;
 
     transform: translateX(-50%) translateY(0);
+
 }
 
 .depoimento-card p {
+
     font-size: 1.2rem;
+
     line-height: 1.8;
+
     color: #e5e5e5;
+
     margin-bottom: 20px;
+
 }
 
 .depoimento-card span {
+
     color: #d4af37;
+
     font-weight: 600;
+
 }
 
 /* =========================
@@ -1254,6 +1316,7 @@ RECONHECIMENTO
 .premiacao-video {
 
     text-align: center;
+    margin-top: 80px;
 
 }
 
